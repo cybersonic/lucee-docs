@@ -18,6 +18,7 @@ These instructions assume you know how to set up DNS, port forwarding for your r
 5) Add a Host entry to `Server.XML` - I installed to the default location (`C:\lucee`) so the path is `C:\lucee\tomcat\conf\server.xml`)
 
 6) Just above the `</Engine>` tag, add the following Host entry:
+
 ```
 <Host name="lctest.blahblah.com" appBase="webapps"
 	unpackWARs="true" autoDeploy="true"
@@ -26,6 +27,7 @@ These instructions assume you know how to set up DNS, port forwarding for your r
 	<Alias>lctest.blahblah.com</Alias>
 </Host>
 ```
+
 Substitute your host name and alias, and put in your local folder for docBase
 
 7) Save the XML file and Restart Lucee - in Windows 2012 R2, click the Start button, click the down arrow, select Lucy-Tomcat Service Control
